@@ -1,0 +1,48 @@
+﻿@model AmerProba.Data.Transakcija
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transakcija</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tip)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tip)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Detalji)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Detalji)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Iznos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Iznos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vrijeme)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vrijeme)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.KorisnikId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KorisnikId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TransakcijaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

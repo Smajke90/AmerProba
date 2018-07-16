@@ -12,5 +12,7 @@ namespace AmerProba.Data
             : base(options)
         {
         }
+        public DbSet<Transakcija> Transakcije { get; set; }
+        public object Transakcija { get; internal set; }
     }
 }
